@@ -233,14 +233,14 @@ mysqli_query($conn,$sql);
                 <!-- header inner -->
                 <div class="header header-bg">
 
-                    <div class="container-fluid">
+                    <div style="background-color:#051D40;" class="container-fluid">
 
                         <div class="row">
                             <div class="col-md-3 logo_section">
                                 <div class="full">
                                     <div class="center-desk">
                                         <div class="logo">
-                                            <a href="index.php"><img src="images/logo.png" alt="#"></a>
+                                            <a href="index.php"><img style="height:200px;" src="images/wo2.png" alt="#"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -275,6 +275,9 @@ mysqli_query($conn,$sql);
 <!-- ///////////////////////////////////////////////// -->
 <!-- ////////////////////chooose table function//////////////// -->
 <!-- //////////////////////////////////////////////// -->
+<br>
+<br>
+<br>
 
 <div class="col-md-12 col-lg-12 col-xl-12 offset-md-3">
     <form action="admin.php" method="POST" >
@@ -513,8 +516,6 @@ switch ($_POST['tables']) {
         <td>Product name</td>
         <td>Image</td>
         <td>Category name</td>
-        <td>Price</td>
-        <td>Quantity</td>
         <td>Created at</td>
         <td>Updated at</td>
         <td>Update</td>

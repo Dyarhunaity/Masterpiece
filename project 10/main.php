@@ -40,14 +40,13 @@ include('include/header.php');
     <div class="row">
         <!-- <div class="col-md-4 col-lg-4 col-xl-4"> -->
             <form action="main.php" method="POST" class="form-group">
-                <button type="submit" name="all" class="btn btn-secondary form-control" style="width: auto;">all categories</button>
-                <button type="submit" name="sales" class="btn btn-secondary form-control" style="width: auto;">Recommended</button></form>
+                <button type="submit" name="sales" class="btn btn-secondary form-control" style="width: auto;">All Categories</button></form>
             <?php foreach ($getAllCategory as $category) : ?>
                 <?php 
 
-            //     echo '<form class="form-group" action="main.php" method="POST">
-            //         <input type="hidden" name="cname" value="' . $category['category_id'] . '">
-            //    <button class="btn btn-secondary form-control" type="submit" name="category"> ' . $category['categoryname'] . ' products</button> </form>';
+                echo '<form class="form-group" action="main.php" method="POST">
+                    <input type="hidden" name="cname" value="' . $category['category_id'] . '">
+               <button class="btn btn-secondary form-control" type="submit" name="category"> ' . $category['categoryname'] . ' </button> </form>';
                 
                 ?>
             <?php endforeach ?>
@@ -72,12 +71,7 @@ include('include/header.php');
                                 " . $product['pname'] . "
                             </a>
                             </h4>";
-                    if ($product['sale'] == 1) {
-                        echo "<span class='product_price'>JD" . $product['new_price'] . "</span>
-                                <span class ='old-price' STYLE='text-decoration:line-through'>JD" . $product['price'] . "</span>";
-                    } else {
-                        echo "<span class='product_price'>JD" . $product['price'] . "</span>";
-                    }
+                   
                     echo "<p class='card-text'>
                             <a href='product_detail3.php?product=" . $product['id'] . "' class='btn btn-secondary btn-sm'>
                                 View
@@ -98,12 +92,7 @@ include('include/header.php');
                                 " . $product['pname'] . "
                             </a>
                             </h4>";
-                    if ($product['sale'] == 1) {
-                        echo "<span class='product_price'>JD" . $product['new_price'] . "</span>
-                                <span class ='old-price' STYLE='text-decoration:line-through'>JD" . $product['price'] . "</span>";
-                    } else {
-                        echo "<span class='product_price'>$" . $product['price'] . "</span>";
-                    }
+                   
                     echo "<p class='card-text'>
                         <form action='main.php' method='POST' class='form'>
                         <input type='hidden' value='" . $product['id'] . "' name='id_value'>
@@ -127,12 +116,7 @@ include('include/header.php');
                                     " . $product['pname'] . "
                                 </a>
                             </h4>";
-                        if ($product['sale'] == 1) {
-                            echo "<span class='product_price'>JD" . $product['new_price'] . "</span>
-                                <span class ='old-price' STYLE='text-decoration:line-through'>JD" . $product['price'] . "</span>";
-                        } else {
-                            echo "<span class='product_price'>JD" . $product['price'] . "</span>";
-                        }
+                    
                         echo "<p class='card-text'>
                             <form action='main.php' method='POST' class='form'>
                             <input type='hidden' value='" . $product['id'] . "' name='id_value'>

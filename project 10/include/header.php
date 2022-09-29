@@ -126,8 +126,8 @@ if (!empty($_SESSION['name'])) {
                                             <a style="color:white" href="login.php">Login</a>
                                         </li>
 
-                                        <!-- <li style="display:<?php echo $uss; ?> ;"><a href="cart.php"><i class="fa-solid fa-basket-shopping fa-lg basket-icon"></i></a>
-                                        </li> -->
+                                        <li style="display:<?php echo $uss; ?> ; "><a href="cart.php"><i style="color:white;" class="fa-solid fa-heart"></i></a>
+                                        </li>
                                         <li style="display:<?php echo $uss; ?> ;"><a href="user.php"><i style="color:white;" class="fa-solid fa-user fa-lg basket-icon"></i></a>
                                         </li>
                                         <li style="display:<?php echo $uss; ?> ;"><a href="logout.php"><i style="color:white;" class="fa-solid fa-right-from-bracket "></i></i></a>

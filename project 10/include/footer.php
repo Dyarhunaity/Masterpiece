@@ -46,7 +46,7 @@
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold text-white">Contact</h6>
-                        <p><i class="fas fa-home mr-3"></i>Aqaba</p>
+                        <p><i class="fas fa-home mr-3"></i>Aqaba Special Economic Zone</p>
                         <p><i class="fas fa-envelope mr-3"></i> aqabaforyou@gmail.com</p>
                         <p><i class="fas fa-phone mr-3"></i> +962 773298642</p>
                     </div>
@@ -83,7 +83,7 @@
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: #051D40">
             © 2022 Copyright:
-            <a class="text-white" href=" " target="_blank">AQABA FOR YOU</a>
+            <a class="text-white" href=" " target="_blank">Aqaba Special Economic Zone</a>
         </div>
         <!-- Copyright -->
     </footer>
